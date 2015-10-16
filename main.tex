@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Alex} % Your first name
+\familyname{Ledger} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Resume}
+\address{7827 SE 35th Ave}{Portland, OR 97202}
+
+\mobile{(417) 766 9854}
+\email{a.led1027@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012--2016}{Bachelor of Arts in Math-Computer Science}{}{\textit{Reed College} (in progress)}{}{}  
+
+\section{Undergraduate Thesis}
+
+\cvitem{Topic}{\emph{Secure Multiparty Computation (in progress)}}
+\cvitem{Field}{Cryptography}
+\cvitem{Advisor}{Professor Adam Groce}
+\cvitem{Description}{This thesis explores current methods of secure multiparty computation, a cryptographic protocol for getting two people who don't trust each other to work together, and gives proof-of-concepts of new techniques which speed up the computation.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Research}
+
+\cventry{2015--Present}{Math-Computer Science Research Assistant}{\textsc{Reed College}}{Portland}{}
+{I worked under professor Adam Groce as a Math-Computer Science researcher, particularly in the area of cryptography, specifically the subfield of Oblivious RAM (a method for obfuscating a client's access patterns to a server). We implemented ORAM protocols in C++, combined ORAM protocols with cryptocurrencies (i.e. Bitcoin and Ethereum), and created new methods for making ORAM protocols more secure in the real world. We are currently in the process of writing the paper.}
+
+\cventry{2015--Present}{Artifial Life Lab Research Assistant}{\textsc{Reed College}}{Portland}{}{I worked under philosophy professor Mark Bedau to examine whether culture exhibits aspects of evolution. We used U.S. patents as a proxy for "change in technology in culture" and examined the patents using statistical and machine learning methods.}
+
+\subsection{Industry}
+
+\cventry{2014}{Software Engineering Intern}{\textsc{The Program PDX}}{Portland}{}{I worked with C++, OpenFrameworks and video technologies such as the Microsoft Kinect and webcams to construct engaging applications for children's museums and retail stores}
+
+\cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textsc{Reed College}}{Portland}{}{I administered a LAMP server, and maintained and built Django web applications for the Reed College student body website.}
+
+\cventry{2014-2015}{Teaching Assistant}{\textsc{Reed College}}{Portland}{}{Teaching Assistant for Math 121, Reed's Introduction to Computer Science course.}
+
+\section{Skills}
+\cvitem{Dabbled}{Javascript, R, Haskell, Clojure, Mathematica, Java}
+\cvitem{Experienced}{Python, C, C++, Latex, MongoDB}
+\cvitem{Technologies}{Experienced with Macs, Linux, Git version control Vim}
+\cvitem{Other}{Experienced with implementing machine learning algorithms from scratch, and using existing machine learning and data analysis techniques in Python.}
+
+\section{More Information}
+
+\cvitem{Github}{github.com/aled1027}
+\cvitem{Linked in}{linkedin.com/pub/alex-ledger/61/ab4/75a}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%\section{Awards}
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%\section{Interests}
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+% To remove the cover letter, comment out this entire block
+%\clearpage
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%\makelettertitle % Print letter title
+%\lipsum[1-3] % Dummy text
+%\makeletterclosing % Print letter signature
+%----------------------------------------------------------------------------------------
+
+\end{document}
