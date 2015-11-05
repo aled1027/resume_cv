@@ -25,7 +25,7 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
@@ -50,7 +50,7 @@
 %\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-%\quote{"A witty and playful quotation" - John Smith}
+%\quote{Interested in ...}
 
 %----------------------------------------------------------------------------------------
 
@@ -62,16 +62,20 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
+%\section{Personal Statement}
+%\cvitem{}{Climate Change is perhaps the biggest problem of our generation, and we need to start innovating. I want to tackle climate change using my background in Math, Computer Science and Machine Learning, so that we can start innovating and adapting for the future.}
+
 \section{Education}
 
-\cventry{2012--2016}{Bachelor of Arts in Math-Computer Science}{}{\textit{Reed College} (in progress)}{}{}  
+\cventry{2012--Present}{Bachelor of Arts in Math-Computer Science}{}{\textit{Reed College} (in progress)}{}{}  
 
 \section{Undergraduate Thesis}
 
-\cvitem{Topic}{\emph{Secure Multiparty Computation (in progress)}}
+\cvitem{Topic}{\emph{Improving Methods for Secure Multiparty Computation (in progress)}}
 \cvitem{Field}{Cryptography}
 \cvitem{Advisor}{Professor Adam Groce}
-\cvitem{Description}{This thesis explores current methods of secure multiparty computation, a cryptographic protocol for getting two people who don't trust each other to work together, and gives proof-of-concepts of new techniques which speed up the computation.}
+\cvitem{Description}{This thesis explores current methods of secure multiparty computation, a cryptographic protocol for allowing two people who do not trust each other to work together. 
+The thesis gives proof-of-concept prototypes of new techniques which speed up the computation.}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -81,29 +85,54 @@
 
 \subsection{Research}
 
-\cventry{2015--Present}{Math-Computer Science Research Assistant}{\textsc{Reed College}}{Portland}{}
-{I worked under professor Adam Groce as a Math-Computer Science researcher, particularly in the area of cryptography, specifically the subfield of Oblivious RAM (a method for obfuscating a client's access patterns to a server). We implemented ORAM protocols in C++, combined ORAM protocols with cryptocurrencies (i.e. Bitcoin and Ethereum), and created new methods for making ORAM protocols more secure in the real world. We are currently in the process of writing the paper.}
+\cventry{2015--Present}{Math-Computer Science Research Assistant}{\textsc{Reed College}}{Portland}{}{
+\begin{itemize}
+    \item I worked with professor Adam Groce on Oblivious RAM (ORAM), a subfield of cryptography focused on obfuscating a client's access patterns to a server. 
+    \item We implemented ORAM protocols in C++, combined ORAM protocols with cryptocurrencies (i.e. Bitcoin), and constructed a new framework for ORAM protocols.
+    \item We are currently in the process of writing the paper.
+\end{itemize}
+}
 
-\cventry{2015--Present}{Artifial Life Lab Research Assistant}{\textsc{Reed College}}{Portland}{}{I worked under philosophy professor Mark Bedau to examine whether culture exhibits aspects of evolution. We used U.S. patents as a proxy for "change in technology in culture" and examined the patents using statistical and machine learning methods.}
+\cventry{2015--Present}{Artificial Life Lab Research Assistant}{\textsc{Reed College}}{Portland}{}{
+\begin{itemize}
+    \item I worked with professor Mark Bedau on examining whether culture and technology exhibits aspects of evolution, using U.S. patents as a proxy for "technology in culture". 
+    \item To analyze the U.S. patents database, we employed many statistical and machine learning techniques.
+    \item I worked closely with neural nets, natural language processing techniques, regression models, graph algorithms and network algorithms.
+\end{itemize}
+}
 
 \subsection{Industry}
 
 \cventry{2014}{Software Engineering Intern}{\textsc{The Program PDX}}{Portland}{}{I worked with C++, OpenFrameworks and video technologies such as the Microsoft Kinect and webcams to construct engaging applications for children's museums and retail stores}
 
-\cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textsc{Reed College}}{Portland}{}{I administered a LAMP server, and maintained and built Django web applications for the Reed College student body website.}
+\cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textsc{Reed College}}{Portland}{}{I administered a LAMP server,maintained and built Python-Django web applications for the Reed College student body website.}
 
-\cventry{2014-2015}{Teaching Assistant}{\textsc{Reed College}}{Portland}{}{Teaching Assistant for Math 121, Reed's Introduction to Computer Science course.}
+\cventry{2014-2015}{Teaching Assistant}{\textsc{Reed College}}{Portland}{}{Teaching Assistant for Math 121, Reed's introduction to computer science course.}
 
 \section{Skills}
-\cvitem{Dabbled}{Javascript, R, Haskell, Clojure, Mathematica, Java}
-\cvitem{Experienced}{Python, C, C++, Latex, MongoDB}
-\cvitem{Technologies}{Experienced with Macs, Linux, Git version control Vim}
-\cvitem{Other}{Experienced with implementing machine learning algorithms from scratch, and using existing machine learning and data analysis techniques in Python.}
+\cvitem{Intermediate}{R, Javascript, Haskell, Clojure, Mathematica}
+\cvitem{Experienced}{Python, C, C++, Java, Latex, MongoDB}
+\cvitem{Technologies}{Experience with Linux, Git version control.}
+
+\section{Coursework}
+\cvlistdoubleitem{Algorithms and Data Structures}{Probability}
+\cvlistdoubleitem{Crytography}{Real Analysis}
+\cvlistdoubleitem{Computability and Complexity}{Abstract Algebra}
+\cvlistdoubleitem{Linear Algebra}{Multivariable Calculus}
+\cvlistdoubleitem{2 years of Physics}{2 years of Economics}
 
 \section{More Information}
-
 \cvitem{Github}{github.com/aled1027}
-\cvitem{Linked in}{linkedin.com/pub/alex-ledger/61/ab4/75a}
+\cvitem{LinkedIn}{linkedin.com/pub/alex-ledger/61/ab4/75a}
+
+\section{Other Interests}
+\cvlistitem{Machine Learning}
+\cvlistitem{Climate Change}
+\cvlistitem{Cryptography}
+\cvlistitem{Artificial Intelligence}
+\cvlistitem{Human-Computer Interaction}
+\cvlistitem{Network and Graph Theory}
+\cvlistitem{Dynamical Systems and Chaos Theory}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
