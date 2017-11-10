@@ -1,165 +1,217 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % "ModernCV" CV and Cover Letter
 % LaTeX Template
 % Version 1.1 (9/12/12)
-%
+% 
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
-%
+% 
 % Original author:
 % Xavier Danaux (xdanaux@gmail.com)
-%
+% 
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
+% 
 % Important note:
 % This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% directory as this .tex file. These files * DEBUG: 
+% provide the resume style and themes 
 % used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+% \setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+% \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \firstname{Alex} % Your first name
 \familyname{Ledger} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Resume}
-\address{7827 SE 35th Ave}{Portland, OR 97202}
+% \address{7827 SE 35th Ave}{Portland, OR 97202}
 
 \mobile{(417) 766 9854}
 \email{a.led1027@gmail.com}
-%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-%\extrainfo{additional information}
-%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-%\quote{Interested in ...}
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{additional information}
+% \photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{Interested in ...}
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \begin{document}
 
 \makecvtitle % Print the CV title
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
-%\section{Personal Statement}
-%\cvitem{}{Climate Change is perhaps the biggest problem of our generation, and we need to start innovating. I want to tackle climate change using my background in Math, Computer Science and Machine Learning, so that we can start innovating and adapting for the future.}
+% \section{Personal Statement}
+% \cvitem{}{Climate Change is perhaps the biggest problem of our generation, and we need to start innovating. I want to tackle climate change using my background in Math, Computer Science and Machine Learning, so that we can start innovating and adapting for the future.}
 
 \section{Education}
 
-\cventry{2012--Present}{Bachelor of Arts in Math-Computer Science}{}{\textit{Reed College} (in progress)}{}{}  
+\cventry{2012--2016}{Bachelor of Arts in Math-Computer Science}{}{\textit{Reed College}}{}{}  
 
 \section{Undergraduate Thesis}
 
-\cvitem{Topic}{\emph{Improving Methods for Secure Computation (in progress)}}
+\cvitem{Topic}{\emph{Implementing Component-Based Garbled Circuits}}
 \cvitem{Field}{Cryptography}
 \cvitem{Advisor}{Professor Adam Groce}
-\cvitem{Description}{Explores methods of secure computation, a cryptographic protocol for allowing two people who do not trust each other to work together. I implement new, faster methods of secure computation in C and achieve an order of magnitude speed up over prior work.}
+\cvitem{Description}{Explores methods of secure computation, a cryptographic
+  protocol for allowing two people who do not trust each other to work together.
+  I developed a new technique for chaining components of Yao's
+  garbled circuits, and I implemented the technique in C to achieve an order of
+  magnitude speed up over prior work.}
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \section{Experience}
 
-\subsection{Research}
-
-\cventry{2015--Present}{Math-Computer Science Research Assistant}{Reed College}{Portland}{}{
-\begin{itemize}
-    \item Worked with professor Adam Groce on Oblivious RAM (ORAM), a subfield of cryptography focused on obfuscating a client's access patterns to a server. 
-    \item Implemented old and new ORAM protocols in C++, wrote cryptographic proofs that the protocols were secure, and in the process of writing a paper.
-\end{itemize}
+\cventry{2016--Present}{Assistant Staff}{MIT Lincoln Lab}{Lexington, MA}{}{
+  Designed, architected, and implemented a framework for secure computation
+  involving new cryptographic optimizations, parallelized code, a uniquely
+  tailored test harness, and enchanced developer usability
 }
 
-\cventry{2016--Present}{Computational Biology Research Assistant}{Reed College}{Portland}{}{
-\begin{itemize}
-    \item Worked with professor Anna Ritz on genomic analysis.
-    \item Statistically analyzed genome mapping algorithms and developed methods for detecting and characterizing structual variants.
-\end{itemize}
-}
-\cventry{2015--Present}{Artificial Life Lab Research Assistant}{\textit{Reed College}}{Portland}{}{
-\begin{itemize}
-    \item Worked with professor Mark Bedau on examining whether culture and technology exhibits aspects of evolution, using U.S. patents as a proxy for "technology in culture". 
-    \item Employed many statistical and machine learning techniques to analyze the patents database including neural nets, natural language processing techniques, regression models, anomaly detection algorithms, and other network algorithms. 
-\end{itemize}
+\cventry{2016--Present}{Student}{MIT}{Cambridge, MA}{}{
+  Participating in classes at MIT including Lattice Cryptography with Vinod
+  Vaikuntanathan, Blockchains with Silvio Micali, and Multicore Programming
+  with Nir Shavit
 }
 
-\subsection{Industry}
+\cventry{2016}{Software Engineer Intern}{Sailfan}{Portland, OR}{}{
+  \begin{itemize}
+  \item Researched and developed algorithms and software to detect features in
+    images and compute statistics in domains with a limited training set.
+  \item Implemented a RESTful interface for clients to interact with the
+    image processing code
+  \end{itemize}
+}
 
-\cventry{2014}{Software Engineering Intern}{\textit{The Program PDX}}{Portland}{}{Used  C++, OpenFrameworks and video technologies such as the Microsoft Kinect and webcams to construct engaging applications for children's museums and retail stores}
+\cventry{2015--2016}{Math-Computer Science Research Assistant}{Reed
+  College}{Portland, OR}{}{
+  \begin{itemize}
+  \item Worked with professor Adam Groce on Oblivious RAM (ORAM), a subfield
+    of cryptography focused on obfuscating a client's access patterns to a server
+  \item Implemented old and new ORAM protocols in C++, wrote cryptographic
+    proofs that the protocols were secure, and published a paper
+  \end{itemize}
+}
 
-\cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textit{Reed College}}{Portland}{}{Administered a LAMP server and maintained and built Python-Django web applications for the Reed College student body website.}
+\cventry{2016}{Computational Biology Research Assistant}{Reed College}{Portland,
+OR}{}{
+  \begin{itemize}
+  \item Worked with professor Anna Ritz on genomic analysis
+  \item Statistically analyzed genome mapping algorithms and developed methods for detecting and characterizing structual variants
+  \end{itemize}
+}
 
-\cventry{2014-2015}{Teaching Assistant}{\textit{Reed College}}{Portland}{}{Teaching Assistant for Math 121, Reed's introduction to computer science course.}
+\cventry{2015--2016}{Artificial Life Lab Research Assistant}{\textit{Reed
+    College}}{Portland, OR}{}{
+  \begin{itemize}
+  \item Worked with professor Mark Bedau on examining whether culture and technology exhibits aspects of evolution, using U.S. patents as a proxy for "technology in culture"
+  \item Employed many statistical and machine learning techniques to analyze the patents database including neural nets, natural language processing techniques, regression models, anomaly detection algorithms, and other network algorithms
+  \end{itemize}
+}
 
-\section{Skills}
-\cvitem{Experienced}{Python, C, C++, Java, Latex, R, Bash, MongoDB, NoSQL }
-\cvitem{Experienced}{Linux, Git version control, Subversion, HTML, Haskell}
-\cvitem{Intermediate}{Scala, SQL, Ruby, Javascript, Clojure, Mathematica, Matlab}
+\cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textit{Reed
+    College}}{Portland, OR}{}{Administered a LAMP server and maintained and
+  built Python-Django web applications for the Reed College student body website
+}
+
+\cventry{2014-2015}{Teaching Assistant}{\textit{Reed College}}{Portland,
+  OR}{}{Teaching Assistant for Math 121, Reed's introduction to computer science
+  course
+}
+
+\cventry{2014}{Software Engineering Intern}{\textit{The Program PDX}}{Portland,
+  OR}{}{Used  C++, OpenFrameworks and video technologies such as the Microsoft
+  Kinect and webcams to construct engaging applications for children's museums
+  and retail stores
+}
+
+\section{Publications and Preprints}
+
+\cvlistitem{``Externally Verifiable Oblivious RAM,'' with Adam Groce and Joshua Gancher. Privacy Enhancing Technologies Symposium (PETS), July 2017.}
+
+\cvlistitem{``CompGC: Efficient Offline/Online Semi-honest Two-party Computation,''
+  with Adam Groce, Alex Malozemoff, and Arkady Yerukhimovich.}
+
+\cvlistitem{``Haplotype Resolved Assembly and Structural Variant Detection with
+  Long-reads,'' with Anna Ritz, Oscar Rodriguez, Matthew Pendleton, and Ali Bashir.}
+
+\cvlistitem{``Implementing Component-Based Garbled Circuits,'' Undergraduate thesis,
+  Reed College, advised by Adam Groce, 2016.}
+
+\section{Computer Skills}
+\cvitem{Experienced}{Rust, C, C++, Python, Java, Latex, R, Bash, MongoDB, NoSQL,
+  Linux, Git}
+\cvitem{Intermediate}{Clojure, Coq, SQL, Mathematica, Matlab, Haskell}
 
 \section{Coursework}
 \cvlistdoubleitem{Computer Systems}{Cryptography}
-\cvlistdoubleitem{Algorithms and Data Structures}{Probability}
-\cvlistdoubleitem{Computability and Complexity}{Abstract Algebra}
-\cvlistdoubleitem{Real Analaysis}{Linear Algebra}
-\cvlistdoubleitem{Multivariable Calculus}{2 years of Physics}
-\cvlistdoubleitem{2 years of Economics}{}
+\cvlistdoubleitem{Multicore Programming}{Lattice Cryptography}
+\cvlistdoubleitem{Blockchains}{Algorithms and Data Structures}
+\cvlistdoubleitem{Computability and Complexity}{Probability and Combinatorics}
+\cvlistdoubleitem{Real Analaysis}{Abstract Algebra}
+\cvlistdoubleitem{Multivariable Calculus}{Real Analysis}
+\cvlistdoubleitem{2 years of Economics}{2 years of Physics}
 
 \section{More Information}
 \cvitem{Github}{github.com/aled1027}
 \cvitem{LinkedIn}{linkedin.com/pub/alex-ledger/61/ab4/75a}
 
-\section{Other Interests}
+\section{Interests}
 \cvlistitem{Cryptography}
-\cvlistitem{Machine Learning}
-\cvlistitem{Climate Change}
-\cvlistitem{Artificial Intelligence}
+\cvlistitem{Data Privacy}
+\cvlistitem{Formal Methods}
+\cvlistitem{Asynchronous and Concurrent Systems}
+\cvlistitem{Machine Learning and Artificial Intelligence}
 \cvlistitem{Network and Graph Theory}
-\cvlistitem{Dynamical Systems and Chaos Theory}
-\cvlistitem{Internet of Things}
+\cvlistitem{Climate Change}
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 %	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-%\section{Awards}
-%\cvitem{2011}{School of Business Postgraduate Scholarship}
-%\cvitem{2010}{Top Achiever Award -- Commerce}
+% ----------------------------------------------------------------------------------------
+% \section{Awards}
+% \cvitem{2011}{School of Business Postgraduate Scholarship}
+% \cvitem{2010}{Top Achiever Award -- Commerce}
 
-%\section{Interests}
-%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-%\cvlistdoubleitem{Piano}{Chess}
-%\cvlistdoubleitem{Cooking}{Dancing}
-%\cvlistitem{Running}
-%----------------------------------------------------------------------------------------
+% \section{Interests}
+% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+% \cvlistdoubleitem{Piano}{Chess}
+% \cvlistdoubleitem{Cooking}{Dancing}
+% \cvlistitem{Running}
+% ----------------------------------------------------------------------------------------
 %	COVER LETTER
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 % To remove the cover letter, comment out this entire block
-%\clearpage
-%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-%\date{\today} % Letter date
-%\opening{Dear Sir or Madam,} % Opening greeting
-%\closing{Sincerely yours,} % Closing phrase
-%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-%\makelettertitle % Print letter title
-%\lipsum[1-3] % Dummy text
-%\makeletterclosing % Print letter signature
-%----------------------------------------------------------------------------------------
+% \clearpage
+% \recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+% \makelettertitle % Print letter title
+% \lipsum[1-3] % Dummy text
+% \makeletterclosing % Print letter signature
+% ----------------------------------------------------------------------------------------
 
 \end{document}
