@@ -28,7 +28,7 @@
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.80]{geometry} % Reduce document margins
 % \setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 % \setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -40,7 +40,7 @@
 \familyname{Ledger}
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Resume for Computer Science PhD}
+\title{Resume}
 % \address{7827 SE 35th Ave}{Portland, OR 97202}
 
 \mobile{(417) 766 9854}
@@ -56,21 +56,49 @@
 
 \makecvtitle % Print the CV title
 
-% ----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-% ----------------------------------------------------------------------------------------
+\section{Personal Statement}
 
-% \section{Personal Statement}
-% \cvitem{}{Climate Change is perhaps the biggest problem of our generation, and we need to start innovating. I want to tackle climate change using my background in Math, Computer Science and Machine Learning, so that we can start innovating and adapting for the future.}
+% TODO: write me. Two to three sentences about my interest in privacy and security. Can also put on website.
+\cvitem{}{
+  I am a software developer with a focus on building privacy and security tools and applications.
+  I have experience building privacy-enhancing technologies and writing secure, cryptographic code.
+}
+
+\section{Work Experience}
+
+\cventry{2016--Present}{Assistant Staff}{MIT Lincoln Lab}{Lexington, MA}{}{
+  \begin{itemize}
+  \item Designed and implemented a framework for secure multiparty computation, a privacy-enhancing, cryptography-based technology for computing analytics while preserving the privacy of inputs.
+  \item The design and implemention involved novel cryptographic optimizations, concurrent and parallelized code, and a uniquely tailored test harness.
+  \end{itemize}
+}
+
+\cventry{2016}{Software Engineer Intern}{Sailfan}{Portland, OR}{}{
+  \begin{itemize}
+  \item Researched and developed algorithms and software to detect features in images and compute statistics in domains with a limited training set.
+  \item Implemented a RESTful interface for clients to interact with the image processing code.
+  \end{itemize}
+}
+
+\cventry{2015--2016}{Math-Computer Science Research Assistant}{Reed College}{Portland, OR}{}{
+  \begin{itemize}
+  \item Worked with professor Adam Groce on Oblivious RAM (ORAM), a cryptographic technique for obfuscating a client's access patterns to a server.
+  \item Implemented ORAM protocols in C++, wrote cryptographic proofs that the protocols were secure, and published a paper.
+  \end{itemize}
+}
 
 \section{Education}
 
+\cventry{2016--2017}{Student}{MIT}{Cambridge, MA}{}{
+  Participated in classes at MIT including Lattice Cryptography with Vinod
+  Vaikuntanathan, Public Ledgers with Silvio Micali, and Multicore Programming
+  with Nir Shavit
+}
+
 \cventry{2012--2016}{Bachelor of Arts in Math-Computer Science}{}{\textit{Reed College}}{}{}  
 
-\section{Undergraduate Thesis}
-
-\cvitem{Topic}{\emph{Implementing Component-Based Garbled Circuits}}
-\cvitem{Field}{Cryptography}
+\cvitem{Thesis}{\emph{Implementing Component-Based Garbled Circuits}}
+%% \cvitem{Field}{Cryptography}
 \cvitem{Advisor}{Professor Adam Groce}
 \cvitem{Description}{Explores methods of secure computation, a cryptographic
   protocol for allowing two people who do not trust each other to work together.
@@ -78,77 +106,35 @@
   garbled circuits, and I implemented the technique in C to achieve an order of
   magnitude speed up over prior work.}
 
-% ----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-% ----------------------------------------------------------------------------------------
+%% \cventry{2016}{Computational Biology Research Assistant}{Reed College}{Portland,
+%% OR}{}{
+%%   \begin{itemize}
+%%   \item Worked with professor Anna Ritz on genomic analysis
+%%   \item Statistically analyzed genome mapping algorithms and developed methods for detecting and characterizing structual variants
+%%   \end{itemize}
+%% }
+%% \cventry{2015--2016}{Artificial Life Lab Research Assistant}{\textit{Reed
+%%     College}}{Portland, OR}{}{
+%%   \begin{itemize}
+%%   \item Worked with professor Mark Bedau on examining whether culture and technology exhibits aspects of evolution, using U.S. patents as a proxy for "technology in culture"
+%%   \item Employed many statistical and machine learning techniques to analyze the patents database including neural nets, natural language processing techniques, regression models, anomaly detection algorithms, and other network algorithms
+%%   \end{itemize}
+%% }
+%% \cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textit{Reed
+%%     College}}{Portland, OR}{}{Administered a LAMP server and maintained and
+%%   built Python-Django web applications for the Reed College student body website
+%% }
+%% \cventry{2014-2015}{Teaching Assistant}{\textit{Reed College}}{Portland,
+%%   OR}{}{Teaching Assistant for Math 121, Reed's introduction to computer science
+%%   course
+%% }
+%% \cventry{2014}{Software Engineering Intern}{\textit{The Program PDX}}{Portland,
+%%   OR}{}{Used  C++, OpenFrameworks and video technologies such as the Microsoft
+%%   Kinect and webcams to construct engaging applications for children's museums
+%%   and retail stores
+%% }
 
-\section{Experience}
-
-\cventry{2016--Present}{Assistant Staff}{MIT Lincoln Lab}{Lexington, MA}{}{
-  Designed, architected, and implemented a framework for secure computation
-  involving novel cryptographic optimizations, parallelized code, a uniquely
-  tailored test harness, and enhanced developer usability
-}
-
-\cventry{2016--Present}{Student}{MIT}{Cambridge, MA}{}{
-  Participated in classes at MIT including Lattice Cryptography with Vinod
-  Vaikuntanathan, Public Ledgers with Silvio Micali, and Multicore Programming
-  with Nir Shavit
-}
-
-\cventry{2016}{Software Engineer Intern}{Sailfan}{Portland, OR}{}{
-  \begin{itemize}
-  \item Researched and developed algorithms and software to detect features in
-    images and compute statistics in domains with a limited training set
-  \item Implemented a RESTful interface for clients to interact with the
-    image processing code
-  \end{itemize}
-}
-
-\cventry{2015--2016}{Math-Computer Science Research Assistant}{Reed
-  College}{Portland, OR}{}{
-  \begin{itemize}
-  \item Worked with professor Adam Groce on Oblivious RAM (ORAM), a subfield
-    of cryptography focused on obfuscating a client's access patterns to a server
-  \item Implemented old and new ORAM protocols in C++, wrote cryptographic
-    proofs that the protocols were secure, and published a paper
-  \end{itemize}
-}
-
-\cventry{2016}{Computational Biology Research Assistant}{Reed College}{Portland,
-OR}{}{
-  \begin{itemize}
-  \item Worked with professor Anna Ritz on genomic analysis
-  \item Statistically analyzed genome mapping algorithms and developed methods for detecting and characterizing structual variants
-  \end{itemize}
-}
-
-\cventry{2015--2016}{Artificial Life Lab Research Assistant}{\textit{Reed
-    College}}{Portland, OR}{}{
-  \begin{itemize}
-  \item Worked with professor Mark Bedau on examining whether culture and technology exhibits aspects of evolution, using U.S. patents as a proxy for "technology in culture"
-  \item Employed many statistical and machine learning techniques to analyze the patents database including neural nets, natural language processing techniques, regression models, anomaly detection algorithms, and other network algorithms
-  \end{itemize}
-}
-
-\cventry{2014-2015}{Webmaster of Reed Student Body Website}{\textit{Reed
-    College}}{Portland, OR}{}{Administered a LAMP server and maintained and
-  built Python-Django web applications for the Reed College student body website
-}
-
-\cventry{2014-2015}{Teaching Assistant}{\textit{Reed College}}{Portland,
-  OR}{}{Teaching Assistant for Math 121, Reed's introduction to computer science
-  course
-}
-
-\cventry{2014}{Software Engineering Intern}{\textit{The Program PDX}}{Portland,
-  OR}{}{Used  C++, OpenFrameworks and video technologies such as the Microsoft
-  Kinect and webcams to construct engaging applications for children's museums
-  and retail stores
-}
-
-\section{Publications}
-
+%% \section{Publications}
 %"Externally Verifiable Oblivious RAM," with Adam Groce and Joshua Gancher. Privacy Enhancing Technologies Symposium (PETS), July 2017 (https://petsymposium.org/2017/papers/issue2/paper35-2017-2-source.pdf).
 %
 %"CompGC: Efficient Offline/Online Semi-honest Two-party Computation," with Adam Groce, Alex Malozemoff, and Arkady Yerukhimovich (EPrint) (https://eprint.iacr.org/2016/458.pdf).
@@ -157,45 +143,44 @@ OR}{}{
 %
 %"Implementing Component-Based Garbled Circuits," Undergraduate thesis, Reed College, advised by Adam Groce, 2016.
 
+%% \cvlistitem{``Externally Verifiable Oblivious RAM,'' with Adam Groce and Joshua Gancher. Privacy Enhancing Technologies Symposium (PETS), July 2017.}
 
+%% \cvlistitem{``CompGC: Efficient Offline/Online Semi-honest Two-party Computation,''
+%%   with Adam Groce, Alex Malozemoff, and Arkady Yerukhimovich.}
 
-\cvlistitem{``Externally Verifiable Oblivious RAM,'' with Adam Groce and Joshua Gancher. Privacy Enhancing Technologies Symposium (PETS), July 2017.}
+%% \cvlistitem{``Haplotype Resolved Assembly and Structural Variant Detection with
+%%   Long-reads,'' with Anna Ritz, Oscar Rodriguez, Matthew Pendleton, and Ali Bashir.}
 
-\cvlistitem{``CompGC: Efficient Offline/Online Semi-honest Two-party Computation,''
-  with Adam Groce, Alex Malozemoff, and Arkady Yerukhimovich.}
-
-\cvlistitem{``Haplotype Resolved Assembly and Structural Variant Detection with
-  Long-reads,'' with Anna Ritz, Oscar Rodriguez, Matthew Pendleton, and Ali Bashir.}
-
-\cvlistitem{``Implementing Component-Based Garbled Circuits,'' Undergraduate thesis,
-  Reed College, advised by Adam Groce, 2016.}
+%% \cvlistitem{``Implementing Component-Based Garbled Circuits,'' Undergraduate thesis,
+%%   Reed College, advised by Adam Groce, 2016.}
 
 \section{Computer Skills}
-\cvitem{Experienced}{Rust, C, C++, Python, Java, Latex, R, Bash, MongoDB, NoSQL,
-  Linux, Git}
-\cvitem{Intermediate}{Clojure, Coq, SQL, Mathematica, Matlab, Haskell}
+\cvitem{Experienced}{C, C++, Python, Rust, Java, R, Bash, Linux, Git, Latex}
+\cvitem{Intermediate}{Clojure, Coq, SQL, Mathematica, Matlab, Haskell, MongoDB, NoSQL}
 
-\section{Coursework}
-\cvlistdoubleitem{Computer Systems}{Cryptography}
-\cvlistdoubleitem{Multicore Programming}{Lattice Cryptography}
-\cvlistdoubleitem{Public Ledgers}{Algorithms and Data Structures}
-\cvlistdoubleitem{Computability and Complexity}{Probability and Combinatorics}
-\cvlistdoubleitem{Real Analaysis}{Abstract Algebra}
-\cvlistdoubleitem{Multivariable Calculus}{Real Analysis}
-\cvlistdoubleitem{2 years of Economics}{2 years of Physics}
+%% \section{Coursework}
+%% \cvlistdoubleitem{Computer Systems}{Cryptography}
+%% \cvlistdoubleitem{Multicore Programming}{Lattice Cryptography}
+%% \cvlistdoubleitem{Public Ledgers}{Algorithms and Data Structures}
+%% \cvlistdoubleitem{Computability and Complexity}{Probability and Combinatorics}
+%% \cvlistdoubleitem{Real Analaysis}{Abstract Algebra}
+%% \cvlistdoubleitem{Multivariable Calculus}{Real Analysis}
+%% \cvlistdoubleitem{2 years of Economics}{2 years of Physics}
 
 \section{More Information}
+\cvitem{Email}{a.led1027@gmail.com}
+\cvitem{Phone}{417-766-9854}
 \cvitem{Github}{github.com/aled1027}
 \cvitem{LinkedIn}{linkedin.com/pub/alex-ledger/61/ab4/75a}
 
-\section{Interests}
-\cvlistitem{Cryptography}
-\cvlistitem{Data Privacy}
-\cvlistitem{Formal Methods}
-\cvlistitem{Asynchronous and Concurrent Systems}
-\cvlistitem{Machine Learning and Artificial Intelligence}
-\cvlistitem{Network and Graph Theory}
-\cvlistitem{Climate Change}
+%% \section{Interests}
+%% \cvlistitem{Cryptography}
+%% \cvlistitem{Data Privacy}
+%% \cvlistitem{Formal Methods}
+%% \cvlistitem{Asynchronous and Concurrent Systems}
+%% \cvlistitem{Machine Learning and Artificial Intelligence}
+%% \cvlistitem{Network and Graph Theory}
+%% \cvlistitem{Climate Change}
 
 % ----------------------------------------------------------------------------------------
 %	AWARDS SECTION
